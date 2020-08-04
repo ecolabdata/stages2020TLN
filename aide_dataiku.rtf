@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 - Comment mettre un titre ou nommer une recipe?\
+\
+On ne peut pas avoir un titre quis oit visible directement dans le flow. Par contre, on peut ajouter une \'ab\'a0description courte\'a0\'bb qui sera afficher au survol de la recipe et celle-ci aura un petit \'ab\'a0i\'a0\'bb indiquant qu\'92une description est pr\'e9sente.\
+\
+Pour le faire : \
+1) cliquer sur le recipe concern\'e9\
+2) Aller dans l\'92onglet \'ab\'a0Summary\'a0\'bb\
+3) cliquer en dessous du titre sur \'ab\'a0Create a short description\'a0\'bb puis enter le texte voulu\
+\
+\
+______________________________________________________________________\
+\
+\
+- Comment regrouper des recipe/dataset ensemble (pour notamment am\'e9liorer la visibilit\'e9 du flow)?\
+\
+Cette feature n\'92est pas encore disponible, mais il sera bient\'f4t possible de mettre certaines recipe dans des \'ab\'a0zones\'a0\'bb permettant de faire des groupes. Actuellement, il est possible de mettre des \'ab\'a0tags\'a0\'bb sur les recipes et de mettre en \'e9vidence les r\'e9cipes ayant certains tags.\
+\
+Pour le faire :\
+1) cliquer sur la recipe\
+2) cliquer sur \'ab\'a0Tag\'a0\'bb dans le volet droit de l\'92\'e9cran\
+3) cliquer sur les tags souhait\'e9s et/ou cr\'e9er les tags souhait\'e9s\
+\
+\
+______________________________________________________________________\
+\
+\
+- Comment partager un projet pour le rendre visible par d\'92autre utilisateurs ou groupes ?\
+\
+Il suffit d\'92aller sur le projet en question puis dans l\'92onglet \'ab\'a0Security\'a0\'bb.\
+Ensuite dans \'ab\'a0Permissions\'a0\'bb, il est possible d\'92autoriser des groupes et de choisir leur droit (ecriture, lecture, etc)\
+\
+\
+______________________________________________________________________\
+\
+\
+- J\'92ai une erreur indiquant qu\'92un package n\'92est pas disponible alors qu\'92il est bien install\'e9 dans l\'92interface notebook / J\'92ai une erreur dans l\'92interface notebook qui semble \'eatre du \'e0 une version de python ou d\'92un package alors que je suis cens\'e9 avoir la bonne version \
+\
+L\'92interface notebook (malgr\'e9 l\'92affichage du l\'92environnement utilis\'e9 en haut \'e0 droite) utilise une environnement par d\'e9faut (python 2.7 ?). Il est possible de changer cet environnement en cliquant sur \'ab\'a0kernel\'a0\'bb puis sur \'ab\'a0change kernel\'a0\'bb et en s\'e9lectionnant l\'92environnement souhait\'e9.\
+\
+\
+______________________________________________________________________\
+\
+\
+- Je n\'92ai pas l\'92affichage de toutes mes donn\'e9es lorsque je visualise mon dataset, pourquoi ?\
+\
+L\'92affichage de donn\'e9es par DSS permet de restreindre l\'92affichage pour limiter la m\'e9moire utilis\'e9e.\
+Il y a plusieurs options de limitations :\
+\
+1) la premi\'e8re qui permet de limiter le nombre d\'92entr\'e9es et de configurer le \'ab\'a0sample\'a0\'bb (nombre fixe, pourcentage du dataset, tirage al\'e9atoire, etc)\
+\
+2) la deuxieme option permet de limiter la m\'e9moire occup\'e9 par le sample en indiquant une quantit\'e9 de m\'e9moire maximale.\
+\
+Pour modifier les options par d\'e9faut : \
+- Cliquer sur le dataset\
+- Aller dnas l\'92onglet \'ab\'a0Explore\'a0\'bb\
+- Cliquer sur \'ab\'a0Configure Sample\'a0\'bb\
+- Modifier \'ab\'a0Nb. records\'a0\'bb et/ou \'ab\'a0Max memory usage (MB)\'a0\'bb\
+\
+______________________________________________________________________\
+\
+\
+Comment utiliser des ex\'e9cutables externes ou upload des dossiers/fichiers pour les r\'e9utiliser sur DSS ?\
+\
+Il ne semble pas possible d\'92ajouter directement des dossier dans DSS.\
+\
+Pour les fichiers, il y a plusieurs possibilit\'e9s :\
+\
+1) upload des fichiers dans un dataset en se souvenant de l\'92option choisie dans \'ab\'a0store on\'a0\'bb(un dataset pouvant accueillir plusieurs fichiers)\
+\
+\
+Les fichiers sont accessibles au chemin suivant :\
+../../../../[type_de_folder]/[titre_du_projet]/datasets/[nom_dataset]/fichier_voulu\
+\
+\
+2) Cr\'e9er un \'ab\'a0folder\'a0\'bb Dataiku et y mettre les fichiers en se souvenant de l\'92option choisie dans \'ab\'a0store on\'a0\'bb.\
+\
+\
+Les fichiers sont accessibles au chemin suivant :\
+../../../../[type_de_folder]/[titre_du_projet]/[identifiant_folder]/fichier_voulu\
+\
+\
+o\'f9 \
+\
+[type_de_folder] est soit :\
+-\'91uploads\'92 si on a choisi le \'ab\'a0store on\'a0\'bb par \'ab\'a0defaut\'a0\'bb\
+-\'91managed_datasets\'92 si on a choisi le \'ab\'a0store on\'a0\'bb par \'ab\'a0filesystem_managed\'a0\'bb\
+- \'91managed_folders\'92 si on a choisi le \'ab\'a0store on\'a0\'bb par \'ab\'a0filesystem_folders\'a0\'bb\
+\
+\
+[titre_du_projet] est le nom du projet en majuscule comme entr\'e9 \'e0 l\'92origine (donc en cas de changement de nom, il faut quand m\'eame mettre l\'92ancien titre).\
+\
+[nom_dataset] est le nom indiqu\'e9 lors de la cr\'e9ation du dataset (en haut \'e0 droite).\
+\
+[identifiant_folder] est une chaine de carat\'e8re identifiant un folder. Il peut \'eatre trouv\'e9 de 2 fa\'e7ons :\
+- en cr\'e9ant un code recipe python prenant en entr\'e9e le folder. L\'92identifiant sera indiqu\'e9 dans le code g\'e9n\'e9r\'e9 comme argument de la fonction chargeant le dossier.\
+- en naviguant \'ab\'a0\'e0 la main\'a0\'bb dans l\'92arborescence de dataiku (au travers d\'92un notebook et de la fonction os.listdir(path) par exemple)\
+\
+\
+Exemple :\
+\
+(contexte: nous sommes dans un projet intitul\'e9 \'ab Exemple_upload_file\'a0\'bb\'a0)\
+\
+- Je cr\'e9e un dataset en cliquant sur \'ab\'a0+ DATASET\'a0\'bb puis sur \'ab\'a0upload your file\'a0\'bb\
+- J\'92indique le nom du dataset, ici \'ab\'a0exemple1\'a0\'bb\
+- J\'92ajoute les fichiers que je souhaite utiliser, ici un fichier \'ab test1.txt\'a0\'bb\
+- Je choisis l\'92option de stockage, ici celle par d\'e9faut \'ab Defaut (in DSS data dir.)\'a0\'bb\'a0et je clique sur \'ab\'a0CREATE\'a0\'bb\
+- Je retourne dans mon flow, et je cr\'e9e une recipe python sans mettant en entr\'e9 n\'92importe qu\'92elle dataset (celui cr\'e9er ou un autre peu importe) et en mettant n\'92importe qu\'92elle dataset en sortie.\
+- Je supprime tout le code et j\'92entre :\
+import os\
+os.listdir(\'91../../../../uploads/EXEMPLE_UPLOAD_FILE/datasets/exemple1\'92)\
+\
+Ainsi je peux observer la sortie qui contient la liste des fichiers de mon datatsets, ici seulement \'ab\'a0test1.txt\'a0\'bb\
+\
+Pour utiliser ce fichier (par exemple pour \'91louvrir et el lire en python), il suffira d\'92utiliser son ptah qui est \'ab\'a0../../../../uploads/EXEMPLE_UPLOAD_FILE/datasets/exemple1/test1.txt\'a0\'bb\
+\
+\
+______________________________________________________________________\
+\
+\
+Comment utiliser les stopwords ntlk / J\'92ai une erreur lorsque je tente d\'92utiliser les stopwords nltk\
+\
+- il faut faire attention au param\'e8tre (qui est un nom de fichier) donn\'e9 \'e0 la fonction nltk.corpus.stopwords.words(). En effet, il y a parfois des majuscules sur des codes disponibles en ligne (ou dans des exemples) et cela ne fonctionne pas. \
+Par exemple, pour les stopwords fran\'e7ais, il faut faire \'ab\'a0nltk.corpus.stopwords.words(\'91french\'92)\'a0\'bb (et non \'91French\'92).\
+\
+La liste des langues dispos (pour les stopwords) est disponible dans ce dossier :\
+/home/dataiku/nltk_data/corpora/stopwords/french\
+(ou en python : os.listdir('/home/dataiku/nltk_data/corpora/stopwords') )\
+\
+}
